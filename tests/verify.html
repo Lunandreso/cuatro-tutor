@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cuatro Tutor &mdash; self check</title>
+<style>
+  body { font: 14px/1.6 "Segoe UI", system-ui, sans-serif; background: #0f1419; color: #e7edf5; padding: 24px; max-width: 1000px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; }
+  h2 { font-size: 1rem; color: #e8b64c; margin-top: 26px; border-bottom: 1px solid #2e3b4b; padding-bottom: 6px; }
+  #banner { padding: 14px 18px; border-radius: 10px; font-weight: 700; font-size: 1.05rem; margin: 16px 0; }
+  #banner.pass { background: rgba(63,174,110,.15); color: #3fae6e; border: 1px solid #3fae6e; }
+  #banner.fail { background: rgba(224,82,63,.15); color: #e0523f; border: 1px solid #e0523f; }
+  table { width: 100%; border-collapse: collapse; font-size: .84rem; font-family: Consolas, monospace; }
+  th, td { border: 1px solid #2e3b4b; padding: 5px 9px; text-align: left; }
+  th { background: #222d3b; color: #e8b64c; }
+  ul { padding-left: 20px; }
+  ul.bad li { color: #e0523f; }
+  ul.warn li { color: #e8b64c; }
+  ul.ok li { color: #9aacbf; }
+  small { color: #9aacbf; font-weight: 400; }
+</style>
+</head>
+<body>
+<h1>Cuatro Tutor &mdash; data &amp; music engine self check</h1>
+<p><small>Validates tuning, every tab in the course and songbook (pitch/fret round trip, measure counts vs chord symbols, playable range) and every generated chord voicing.</small></p>
+<div id="banner">running&hellip;</div>
+<div id="out"></div>
+
+<script src="../js/music.js"></script>
+<script src="../js/data/lessons.js"></script>
+<script src="../js/data/songs.js"></script>
+<script src="verify.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuatro Tutor &mdash; Learn the Puerto Rican Cuatro</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="flag" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><i></i></div>
+    <div class="brand-text">
+      <h1>Cuatro Tutor</h1>
+      <p>Learn the Puerto Rican cuatro &mdash; from first note to performance</p>
+    </div>
+  </div>
+
+  <div class="tools">
+    <div class="metro">
+      <button id="metroBtn" class="btn btn-metro">&#9654; Metronome</button>
+      <label>BPM <input id="metroTempo" type="number" min="30" max="240" value="90"></label>
+      <label>Meter
+        <select id="metroMeter">
+          <option value="4">4/4</option>
+          <option value="3">3/4</option>
+          <option value="6">6/8</option>
+          <option value="2">2/4</option>
+        </select>
+      </label>
+      <div id="metroDots" class="metro-dots"></div>
+    </div>
+    <button id="stopAll" class="btn btn-ghost">Stop all sound</button>
+  </div>
+</header>
+
+<nav id="tabnav" class="tabnav"></nav>
+
+<main id="main" class="main"></main>
+
+<footer class="footer">
+  <p><b>Tuning reference:</b> 5th&nbsp;B2+B3 &middot; 4th&nbsp;E3+E4 &middot; 3rd&nbsp;A3 &middot; 2nd&nbsp;D4 &middot; 1st&nbsp;G4 &mdash; all perfect fourths, lowest to highest.</p>
+  <p class="small">All audio is synthesized in your browser &mdash; no files, no network. Progress is saved locally. Traditional pieces are presented as simplified practice arrangements.</p>
+</footer>
+
+<script src="js/music.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/data/lessons.js"></script>
+<script src="js/data/songs.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
